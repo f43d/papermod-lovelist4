@@ -1,0 +1,333 @@
+/* Define the custom font */
+@font-face {
+  font-family: 'DC-CST';
+  src: url('/fonts/DC-CST.woff2') format('woff2'),
+       url('/fonts/DC-CST.woff') format('woff'),
+       url('/fonts/DC-CST.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Ensure html and body cover the full viewport height */
+html, body {
+  height: 100%;
+}
+
+/* Apply the background image to the body */
+html body {
+  background-image: url(/images/background.jpg) !important;
+  background-size: cover !important;
+  background-position: 50% !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'DC-CST', sans-serif !important;
+  font-size: 18px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+/* Make the bucket list container transparent */
+.bucket-list {
+  background-color: transparent !important;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+/* List item styling */
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative; /* Required for the divider */
+}
+
+/* Add a line divider between list items */
+.list-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.5rem; /* Adjust the position of the divider */
+  height: 1px;
+  background-color: silver; /* Divider color */
+}
+
+/* Checkbox SVG */
+.checkbox {
+  width: 48px; /* Increased size */
+  height: 48px; /* Increased size */
+  display: inline-block;
+}
+
+/* Padding After Checkbox */
+.padding-after-checkbox {
+  width: 0.75rem;
+}
+
+/* Text Number */
+.text-number {
+  font-size: 1.7rem; /* Increased size */
+  font-family: 'DC-CST', sans-serif;
+  color: #2f5061; /* Base color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Padding After Text Number */
+.padding-after-number {
+  width: 1rem;
+}
+
+/* Handwritten Text */
+.item-text {
+  font-size: 1.7rem; /* Increased size */
+  line-height: 1.5;
+  font-family: 'DC-CST', sans-serif;
+  color: #2f5061; /* Base color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for list items */
+.list-item:hover .text-number,
+.list-item:hover .item-text {
+  color: #E57F84; /* Hover color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  html body {
+    background-size: contain !important; /* Adjust for tablets */
+  }
+  .bucket-list {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+  }
+  .checkbox {
+    width: 40px; /* Slightly smaller for tablets */
+    height: 40px; /* Slightly smaller for tablets */
+  }
+  .padding-after-checkbox {
+    width: 0.5rem;
+  }
+  .text-number, .item-text {
+    font-size: 1.5rem; /* Slightly smaller for tablets */
+  }
+  .padding-after-number {
+    width: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html body {
+    background-size: cover !important; /* Adjust for mobile */
+  }
+  .bucket-list {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 90%;
+  }
+  .checkbox {
+    width: 30px; /* Smaller for mobile */
+    height: 30px; /* Smaller for mobile */
+  }
+  .padding-after-checkbox {
+    width: 0.4rem;
+  }
+  .text-number, .item-text {
+    font-size: 1.1rem; /* Smaller for mobile */
+  }
+  .padding-after-number {
+    width: 0.5rem;
+  }
+}
+
+/* Cross-out effect for checked items */
+.list-item.checked .item-text,
+.list-item.checked .text-number {
+  position: relative;
+  opacity: 0.6; /* 60% opacity */
+}
+
+.list-item.checked .item-text::after,
+.list-item.checked .text-number::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px; /* Thickness of the cross-out line */
+  background-color: #2f5061; /* Match the text color */
+  transform: translateY(-50%) rotate(-5deg); /* Slight angle for the cross-out line */
+  opacity: 0.6; /* 60% opacity */
+}
+
+/* Hide the theme toggle button */
+.theme-toggle {
+  display: none !important;
+}
+
+/* Force light mode */
+:root {
+  --theme: rgb(255, 255, 255) !important; /* Background color */
+  --primary: rgb(30, 30, 30) !important; /* Text color */
+  --secondary: rgb(108, 108, 108) !important;
+  --tertiary: rgb(214, 214, 214) !important;
+  --content: rgb(31, 31, 31) !important;
+  --code-block-bg: rgb(28, 29, 33) !important;
+  --code-bg: rgb(245, 245, 245) !important;
+  --border: rgb(238, 238, 238) !important;
+}
+
+/* Add padding above the header */
+html body {
+  padding-top: 20px; /* Adjust this value as needed */
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 20px; /* Match the padding-top of the body */
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  z-index: 1000; /* Ensure it stays above other content */
+  background-color: rgba(255, 255, 255, 0.1); /* More transparent */
+  backdrop-filter: blur(3px); /* Softer frosted glass effect */
+  max-width: 800px; /* Match the width of the list */
+  margin: 0 auto; /* Center the header */
+  border-radius: 15px; /* Optional: Add rounded corners */
+  border: 0px solid rgba(255, 255, 255, 0); /* Subtle border */
+}
+
+/* Header Content Container */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Space between image and text */
+  max-width: 100%; /* Ensure content doesn't overflow */
+}
+
+/* Header Image */
+.header-image img {
+  width: 6em; /* Relative to font size */
+  height: 6em; /* Square image */
+  border-radius: 50%; /* Circular image */
+  object-fit: cover; /* Ensure the image fits well */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Light border for contrast */
+}
+
+/* Header Text Container */
+.header-text {
+  text-align: left;
+}
+
+/* Counter Styles */
+.counter {
+  font-size: 1.5em; /* Relative to parent */
+  font-weight: bold;
+  color: #2f5061; /* Match your theme */
+  margin-bottom: 0.5rem;
+}
+
+/* Title Styles */
+.header-text h1 {
+  font-size: 2em; /* Relative to parent */
+  margin: 0;
+  color: #2f5061; /* Match your theme */
+}
+
+/* Description Styles */
+.header-text p {
+  font-size: 1em; /* Relative to parent */
+  margin: 0.5rem 0 0;
+  color: #2f5061; /* Match your theme */
+}
+
+/* Adjust Bucket List Margin */
+.bucket-list {
+  margin-top: 150px; /* Reduced from 300px */
+}
+
+/* Adjust Bucket List Margin to Account for Fixed Header */
+.bucket-list {
+  margin-top: 300px; /* Adjust based on header height */
+}
+
+
+@media (max-width: 768px) {
+  /* Adjust padding above the header for mobile */
+  html body {
+    padding-top: 10px; /* Smaller padding for mobile */
+  }
+
+  /* Adjust header for mobile */
+  .header {
+    top: 10px; /* Match the padding-top of the body */
+    max-width: 90%; /* Slightly narrower on smaller screens */
+    padding: 0.5rem; /* Less padding */
+  }
+
+  /* Adjust header content for mobile */
+  .header-content {
+    flex-direction: column; /* Stack image and text vertically */
+    gap: 0.5rem; /* Reduce gap for smaller screens */
+  }
+
+  /* Adjust header image for mobile */
+  .header-image img {
+    width: 4em; /* Smaller image for mobile */
+    height: 4em; /* Smaller image for mobile */
+  }
+
+  /* Adjust header text for mobile */
+  .header-text {
+    text-align: center; /* Center text on mobile */
+  }
+
+  .counter {
+    font-size: 1.2em; /* Smaller counter for mobile */
+  }
+
+  .header-text h1 {
+    font-size: 1.5em; /* Smaller title for mobile */
+  }
+
+  .header-text p {
+    font-size: 0.9em; /* Smaller description for mobile */
+  }
+
+  /* Adjust bucket list margin for mobile */
+  .bucket-list {
+    margin-top: 120px; /* Adjust for smaller header */
+  }
+}
+
+/* Adjust the footer font size */
+.footer {
+  font-size: 20px; /* Change this value as needed */
+  color:black /* font color */
+}
+
+/* Custom Tag Line Styles */
+.custom-tagline {
+  font-family: 'Roboto', sans-serif; /* Custom font */
+  font-size: 18px; /* Font size */
+  color: #555; /* Text color */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Space below the tag line */
+  padding-top: 20px; /* Space above the tag line */
+  border-bottom: 1px solid #ddd; /* Optional border */
+  padding-bottom: 10px; /* Space below the text */
+}
+
+.comments {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
