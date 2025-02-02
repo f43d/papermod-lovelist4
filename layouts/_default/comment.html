@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main class="main">
+  <article class="post-single">
+    <header class="post-header">
+      <h1 class="post-title">{{ .Title }}</h1>
+    </header>
+    
+    <div class="post-content">
+      {{ partial "comments.html" site.Home }} <!-- Pass home page context -->
+    </div>
+  </article>
+</main>
+{{ end }}

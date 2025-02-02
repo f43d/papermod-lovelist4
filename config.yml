@@ -1,3 +1,26 @@
+baseURL: "https://buc.ketli.st"
 title: ""
 theme: PaperMod
 language: zh-tw
+params:
+  # Disable PaperMod features we don’t need
+  homeInfoParams: false
+  socialIcons: false
+  defaultTheme: light # Force light mode
+  disableThemeToggle: true # Disable the theme toggle button
+  artalk:
+    server: 'https://wish.sorio.us'
+    site: 'bucketlist'
+  # Other parameters
+  assets:
+    customCSS:
+      - /css/extended/custom.css
+    customJS:
+      - /js/custom.js # Add this if you created a custom.js file
+
+disableKinds:
+  - taxonomy
+  - term
+  - RSS
+  - sitemap
+

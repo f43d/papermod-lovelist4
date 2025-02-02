@@ -1,0 +1,61 @@
+{{ define "main" }}
+  <!-- Header Section -->
+  <div class="header">
+    <!-- Placeholder Image and Text Container -->
+    <div class="header-content">
+      <!-- Placeholder Image -->
+      <div class="header-image">
+        <img src="/images/lovelist-profile2.png" alt="Header Image">
+      </div>
+
+      <!-- Text Container -->
+      <div class="header-text">
+        <!-- Counter Section -->
+        <div class="counter">
+          攜手同行 <span id="days-counter">0</span> 天
+        </div>
+
+        <!-- Title and Description -->
+        <h1>和你做的 100件事</h1>
+        <p>这是我们一起庆祝婚姻的 100 件事清单。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bucket List -->
+  <div class="bucket-list">
+    {{ range .Site.Data.list }}
+      {{ $randomChecked := shuffle (seq 1 4) | first 1 }}
+      {{ $randomUnchecked := shuffle (seq 1 4) | first 1 }}
+
+      <div class="list-item {{ if .checked }}checked{{ end }}">
+        <img 
+          src="/svg/checkboxes/{{ if .checked }}checked{{ index $randomChecked 0 }}{{ else }}unchecked{{ index $randomUnchecked 0 }}{{ end }}.svg" 
+          class="checkbox" 
+          alt="Checkbox"
+        >
+        <span class="padding-after-checkbox"></span>
+        <span class="text-number">
+          {{ printf "%02d" (int .id) }}.
+        </span>
+        <span class="padding-after-number"></span>
+        <a href="{{ .link }}" class="item-text">{{ .text }}</a>
+      </div>
+    {{ end }}
+  </div>
+  <script>
+    // Set your marriage date (YYYY-MM-DD format)
+    const marriageDate = new Date('2002-03-03'); // Replace with your actual marriage date
+  
+    // Function to calculate days since marriage
+    function calculateDaysSinceMarriage() {
+      const today = new Date();
+      const timeDiff = today - marriageDate;
+      const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+      return daysDiff;
+    }
+  
+    // Update the counter
+    document.getElementById('days-counter').textContent = calculateDaysSinceMarriage();
+  </script>
+{{ end }}

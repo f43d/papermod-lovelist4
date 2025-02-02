@@ -1,0 +1,28 @@
+<!-- Artalk Container -->
+<div id="Comments"></div>
+
+<!-- Artalk CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.css" rel="stylesheet">
+
+<!-- Artalk JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/artalk/2.9.1/Artalk.js"></script>
+
+<!-- Initialize Artalk -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    Artalk.init({
+      el: '#Comments',
+      pageKey: '{{ .Permalink }}',       // Use home page context
+      pageTitle: '{{ .Title }}',         // Use home page title
+      server: '{{ .Site.Params.artalk.server }}',
+      site: '{{ .Site.Params.artalk.site }}',
+      locale: 'en',                      // Language
+      darkMode: false,                   // Match your theme
+      // Optional: Enable notifications
+      notify: {
+        email: true,                     // Email notifications
+        webhook: ''                      // Add webhook for push notifications if needed
+      }
+    });
+  });
+</script>
