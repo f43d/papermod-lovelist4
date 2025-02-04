@@ -7,6 +7,8 @@
 
 <head>
     {{- partial "head.html" . }}
+    <link rel="preload" href="{{ .Site.Params.customFont }}.woff2" as="font">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body class="
