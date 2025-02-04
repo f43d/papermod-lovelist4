@@ -16,7 +16,7 @@
         </div>
 
         <!-- Title and Description -->
-        <p><span id="years-counter">0</span> 年前，我有一百個不結婚的理由。今日，我只想</p>
+        <p><span id="years-counter">0</span> 年前，我有一百個不結婚的理由。</p><br><h2>今日，我只想></h2></p>
         <h1>和你做100件事</h1>
         
       </div>
@@ -48,15 +48,29 @@
     // Set your marriage date (YYYY-MM-DD format)
     const marriageDate = new Date('2002-03-03'); // Replace with your actual marriage date
   
-    // Function to calculate days since marriage
-    function calculateDaysSinceMarriage() {
+    // Function to calculate days and years since marriage
+    function calculateDaysAndYearsSinceMarriage() {
       const today = new Date();
       const timeDiff = today - marriageDate;
       const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-      return daysDiff;
+      const yearsDiff = Math.floor(daysDiff / 365.25); // Using 365.25 for better accuracy
+      return {
+        days: daysDiff,
+        years: yearsDiff,
+      };
     }
   
-    // Update the counter
-    document.getElementById('days-counter').textContent = calculateDaysSinceMarriage();
+    // Function to update both counters
+    function updateCounters() {
+      const { days, years } = calculateDaysAndYearsSinceMarriage();
+      document.getElementById('days-counter').textContent = `${days} ${days > 1 ? '天' : '日'}`;
+      document.getElementById('years-counter').textContent = `${years} ${years > 1 ? '年' : '年'}`;
+    }
+  
+    // Initial update
+    updateCounters();
+  
+    // Optional: Update the counters every second to account for leap seconds.
+    setInterval(updateCounters, 1000);
   </script>
 {{ end }}
