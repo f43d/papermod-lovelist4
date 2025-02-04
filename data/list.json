@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "text": "幫你做腳底按摩",
+    "text": "幫你做脚底按摩",
     "checked": false,
     "link": "https://example.com"
   },
@@ -43,7 +43,7 @@
   },
   {
     "id": 7,
-    "text": "食米芝連餐廳",
+    "text": "食米芝蓮餐廳",
     "checked": false,
     "link": "https://example.com"
   },
@@ -121,7 +121,7 @@
   },
   {
     "id": 20,
-    "text": "赤腳行沙灘",
+    "text": "赤脚行沙灘",
     "checked": false,
     "link": "https://example.com"
   },
@@ -163,7 +163,7 @@
   },
   {
     "id": 27,
-    "text": "去灣仔海旁撐船",
+    "text": "去灣仔海旁撑船",
     "checked": false,
     "link": "https://example.com"
   },
@@ -307,7 +307,7 @@
   },
   {
     "id": 51,
-    "text": "喺深水埗棚仔布料市埸選花布縫成抱枕套",
+    "text": "喺深水埗棚仔買花布縫成抱枕套",
     "checked": false,
     "link": "https://example.com"
   },
@@ -385,7 +385,7 @@
   },
   {
     "id": 64,
-    "text": "去北海道幸福駅",
+    "text": "去北海道幸福站打卡",
     "checked": false,
     "link": "https://example.com"
   },
