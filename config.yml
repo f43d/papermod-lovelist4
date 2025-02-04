@@ -8,6 +8,7 @@ params:
   socialIcons: false
   defaultTheme: light # Force light mode
   disableThemeToggle: true # Disable the theme toggle button
+  customFont: "static/fonts/DC-CST"
   artalk:
     server: 'https://wish.sorio.us'
     site: 'bucketlist'
