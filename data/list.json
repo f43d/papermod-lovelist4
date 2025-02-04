@@ -7,7 +7,7 @@
   },
   {
     "id": 1,
-    "text": "睇極光",
+    "text": "去芬蘭睇極光",
     "checked": false,
     "link": "https://example.com"
   },
@@ -49,7 +49,7 @@
   },
   {
     "id": 8,
-    "text": "係公園搭營瞓晏覺",
+    "text": "係公園搭營訓晏覺",
     "checked": false,
     "link": "https://example.com"
   },
@@ -73,7 +73,7 @@
   },
   {
     "id": 12,
-    "text": "同海豚一齊游泳",
+    "text": "去冰島睇火山",
     "checked": false,
     "link": "https://example.com"
   },
@@ -103,13 +103,13 @@
   },
   {
     "id": 17,
-    "text": "看流星",
+    "text": "對着流星許願", 
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 18,
-    "text": "幫你剪腳甲",
+    "text": "幫你剪指甲",
     "checked": false,
     "link": "https://example.com"
   },
@@ -127,7 +127,7 @@
   },
   {
     "id": 21,
-    "text": "搭渡海小輪過海",
+    "text": "搭渡海小輪過海看日落",
     "checked": false,
     "link": "https://example.com"
   },
@@ -157,7 +157,7 @@
   },
   {
     "id": 26,
-    "text": "去魚排釣魚",
+    "text": "去半島酒店 High Tea",
     "checked": false,
     "link": "https://example.com"
   },
@@ -169,7 +169,7 @@
   },
   {
     "id": 28,
-    "text": "講鬼故氹你瞓",
+    "text": "講鬼故氹你訓覺",
     "checked": true,
     "link": "https://example.com"
   },
@@ -181,13 +181,13 @@
   },
   {
     "id": 30,
-    "text": "著情侶裝出街",
+    "text": "著情侣裝游街示眾",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 31,
-    "text": "去魚排釣魚",
+    "text": "出海去魚排釣魚",
     "checked": false,
     "link": "https://example.com"
   },
@@ -205,19 +205,19 @@
   },
   {
     "id": 34,
-    "text": "翻看之前寫比大家的情信",
+    "text": "翻看之前寫給對方的情信",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 35,
-    "text": "瞓係床上食早餐",
+    "text": "攤在酒店大床上食Room Service",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 36,
-    "text": "食雞泡魚",
+    "text": "食雞泡魚刺身",
     "checked": false,
     "link": "https://example.com"
   },
@@ -235,7 +235,7 @@
   },
   {
     "id": 39,
-    "text": "幫我剃光頭",
+    "text": "幫我剃鬚",
     "checked": false,
     "link": "https://example.com"
   },
@@ -265,7 +265,7 @@
   },
   {
     "id": 44,
-    "text": "電話 lock screen set 對方既相片",
+    "text": "用對方既相片做電話 Wall Paper",
     "checked": false,
     "link": "https://example.com"
   },
@@ -277,7 +277,7 @@
   },
   {
     "id": 46,
-    "text": "去聽音樂會",
+    "text": "去泰國學學煮泰菜",
     "checked": false,
     "link": "https://example.com"
   },
@@ -307,49 +307,49 @@
   },
   {
     "id": 51,
-    "text": "在深水埗「棚仔」布料市場互選花布，縫成抱枕套",
+    "text": "係深水埗「棚仔」布料市場互選花布，縫成抱枕套",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 52,
-    "text": "到元朗大棠農場釀一瓶專屬梅酒，約定退休時開封",
+    "text": "去伊勢二見興玉神社夫妻岩參拜",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 53,
-    "text": "每年結婚紀念日到天星小輪買2張舊船票裱框收藏",
+    "text": "結婚紀念日去天星小輪買2張舊船票裱框收藏",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 54,
-    "text": "分(好多)段完成香港四徑",
+    "text": "分(好多，好多！)段完成香港四徑",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 55,
-    "text": "用Instagram每年同一角度拍一張牽手背影照",
+    "text": "每年同一角度拍一張牽手背影照",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 56,
-    "text": "在深水埗用100蚊挑戰「情侶侶侶侶穿搭」",
+    "text": "係酒店一齊做Spa",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 57,
-    "text": "贊助一盞大澳棚屋的漁燈，刻上兩人名字",
+    "text": "一齊做義工",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 58,
-    "text": "在「銀杏館」長者餐廳預約七夕雙人餐",
+    "text": "去酒莊試酒",
     "checked": false,
     "link": "https://example.com"
   },
@@ -361,7 +361,7 @@
   },
   {
     "id": 60,
-    "text": "文化中心露天廣場聽交響樂，自備香檳野餐",
+    "text": "自備香檳係文化中心露天廣場聽交響樂",
     "checked": false,
     "link": "https://example.com"
   },
@@ -397,114 +397,114 @@
   },
   {
     "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
+    "text": "去猫島玩貓",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 67,
+    "text": "放孔明燈許願",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 68,
+    "text": "一齊種一棵樹",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 69,
+    "text": "幫兩個仔打手印記錄成長階段",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 70,
+    "text": "學用手語向你講我愛你",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 71,
+    "text": "做個 Time Capsule 留比兩個仔",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 72,
+    "text": "去 Glamping",
+    "checked": false,開始
+    "link": "https://example.com"
+  },
+  {
+    "id": 73,
+    "text": "熊野古道徒步旅行",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 74,
+    "text": "請街頭 Busking 歌手為我們唱一首歌",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 75,
+    "text": "係銀杏館長者餐廳預約七夕雙人餐",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 76,
+    "text": "幫你化妝",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 77,
+    "text": "係沙灘度寫上對方的名字",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 78,
+    "text": "一齊玩過山車",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 79,
+    "text": "再去黃山掛上同心鎖",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 80,
+    "text": "一齊去捐血",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 81,
+    "text": "晨咁早去山頂飲早茶",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 82,
+    "text": "用兩個仔嘅名義向慈善機構捐獻",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 83,
     "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
     "checked": false,
     "link": "https://example.com"
   },
   {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
-    "checked": false,
-    "link": "https://example.com"
-  },
-  {
-    "id": 66,
+    "id": 84,
     "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
     "checked": false,
     "link": "https://example.com"
