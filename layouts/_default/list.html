@@ -16,7 +16,7 @@
         </div>
 
         <!-- Title and Description -->
-        <p><h2><span id="years-counter">0</span>前，我有一百個不結婚的理由。<p>今日，我只想</h2></p>
+        <p><h2><span id="years-counter"></span>前，我有一百個不結婚的理由。<p>今日，我只想</h2></p>
         <h1>和你做100件事</h1>
         
       </div>
@@ -70,7 +70,7 @@
     // Initial update
     updateCounters();
   
-    // Optional: Update the counters every second to account for leap seconds.
-    setInterval(updateCounters, 1000);
+    // Optional: Update the counters once a day (every 86400 seconds)
+    setInterval(updateCounters, 86400 * 1000); // 86400 * 1000 = 1 day in milliseconds
   </script>
 {{ end }}
