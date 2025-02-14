@@ -331,3 +331,38 @@ html body {
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
+
+/* Handwritten Text (for links) */
+.item-text {
+  font-size: 1.5rem; /* Increased size */
+  line-height: 1.5;
+  font-family: 'DC-CST', sans-serif;
+  color: #2f5061; /* Base color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Text Content Style (for regular text blocks) */
+.content-text {
+  font-size: 1.5rem; /* Match .item-text font size */
+  line-height: 1.5;
+  font-family: 'DC-CST', sans-serif; /* Same font */
+  color: #2f5061; /* Same color */
+  /* No transition -- not typically applied to basic text */
+  margin-bottom: 1rem; /* Add some spacing between blocks */
+}
+
+/* Responsive Adjustments for Text Content */
+@media (max-width: 768px) { /* Adjust for tablets and smaller */
+  .content-text {
+    font-size: 1.2rem; /* Slightly smaller font on smaller screens */
+    line-height: 1.6; /* Slightly increase line-height for better readability */
+  }
+}
+
+@media (max-width: 480px) { /* Adjust for phones */
+  .content-text {
+    font-size: 1.1rem; /* Even smaller font for phones */
+    line-height: 1.6;
+  }
+}
+
