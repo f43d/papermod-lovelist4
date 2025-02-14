@@ -1,6 +1,7 @@
 ---
 title: "一百個不結婚的理由"
 description: "Learn more about our company/project." # Optional but useful       
+layout: "list"  # THIS IS THE KEY! 
 ---
 <div class="bucket-list">
 當我宣布要結婚<br>
