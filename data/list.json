@@ -391,7 +391,7 @@
   },
   {
     "id": 65,
-    "text": "坐郵輪環游世界",
+    "text": "去奈良喂鹿",
     "checked": false,
     "link": "https://example.com"
   },
@@ -522,14 +522,14 @@
     "link": "https://example.com"
   },
   {
-    "id": 84,
-    "text": "餵我食藥",
+    "id": 87,
+    "text": "喂我食藥",
     "checked": false,
     "link": "https://example.com"
   },
   {
-    "id": 85,
-    "text": "去奈良餵鹿",
+    "id": 88,
+    "text": "坐郵輪環遊世界",
     "checked": false,
     "link": "https://example.com"
   },
