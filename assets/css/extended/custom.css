@@ -84,7 +84,7 @@ html body {
 
 /* Handwritten Text */
 .item-text {
-  font-size: 1.7rem; /* Increased size */
+  font-size: 1.5rem; /* Increased size */
   line-height: 1.5;
   font-family: 'DC-CST', sans-serif;
   color: #2f5061; /* Base color */
