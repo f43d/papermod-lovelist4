@@ -2,6 +2,7 @@
 title: "一百個不結婚的理由"
 description: "Learn more about our company/project." # Optional but useful       
 ---
+<div class="bucket-list">
 當我宣布要結婚<br>
 豬朋狗友幸災樂禍地說：恭喜恭喜! 真想不到你最后還是會結婚<br>
 的確, 我隨口就可以羅列出一百個不結婚的理由<br>
