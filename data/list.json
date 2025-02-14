@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "text": "在海中裸泳",
+    "text": "同米奇老鼠映相",
     "checked": false,
     "link": "https://example.com"
   },
@@ -115,7 +115,7 @@
   },
   {
     "id": 19,
-    "text": "同米奇老鼠映相",
+    "text": "去猫cafe玩猫",
     "checked": false,
     "link": "https://example.com"
   },
@@ -343,7 +343,7 @@
   },
   {
     "id": 57,
-    "text": "一齊做義工",
+    "text": "背對方刷背",
     "checked": false,
     "link": "https://example.com"
   },
@@ -499,17 +499,46 @@
   },
   {
     "id": 83,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
+    "text": "去京都拍一輯結婚相",
     "checked": false,
     "link": "https://example.com"
   },
   {
     "id": 84,
-    "text": "搭渡輪從中環到坪洲，比賽誰先找到島上五隻貓貓猫猫",
+    "text": "去迷你戲院包埸睇戲",
     "checked": false,
     "link": "https://example.com"
   },
-  
+  {
+    "id": 85,
+    "text": "坐直升機參觀大峽谷",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 86,
+    "text": "一齊去紋身(貼紙)",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 84,
+    "text": "餵我食藥",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 85,
+    "text": "去奈良餵鹿",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 98,
+    "text": "幫我穿上我遍路用的衣服，安心放手讓我上路",
+    "checked": false,
+    "link": "https://example.com"
+  },
   {
     "id": 99,
     "text": "執子之手 與子偕老",
