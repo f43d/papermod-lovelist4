@@ -1,7 +1,6 @@
 ---
 title: "一百個不結婚的理由"
-description: "Learn more about our company/project." # Optional but useful
-slug: "100-reasons-why"        
+description: "Learn more about our company/project." # Optional but useful       
 ---
 
 當我宣佈要結婚
