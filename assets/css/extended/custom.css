@@ -366,3 +366,8 @@ html body {
   }
 }
 
+.post-content p {
+  margin-bottom: 1em; /* Default spacing between paragraphs */
+  /* You might also adjust line-height, font-size, etc., here */
+}
+
