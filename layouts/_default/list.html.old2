@@ -1,0 +1,85 @@
+{{ define "main" }}
+  <!-- Header Section -->
+  <div class="header">
+    <!-- Placeholder Image and Text Container -->
+    <div class="header-content">
+      <!-- Placeholder Image -->
+      <div class="header-image">
+        <img src="/images/lovelist-profile2.png" alt="Header Image">
+      </div>
+
+      <!-- Text Container -->
+      <div class="header-text">
+        <!-- Counter Section -->
+        <div class="counter">
+          笑泪同行 <span id="days-counter">0</span>
+        </div>
+
+        <!-- Title and Description -->
+        <p>
+          <h2><span id="years-counter"></span>前，我有一百個不結婚的理由。<p>今日，我只想</h2>
+        </p>
+        <h1>{{ .Title }}</h1>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bucket List -->
+  <div class="bucket-list">
+
+    {{ if eq .File.Path "content/100-reasons-why/index.md" }}
+      <!-- Display custom content for 100-reasons-why -->
+      {{ .Content }}
+    {{ else }}
+      <!-- Default: Iterate through your list data -->
+      {{ range .Site.Data.list }}
+        {{ $randomChecked := shuffle (seq 1 4) | first 1 }}
+        {{ $randomUnchecked := shuffle (seq 1 4) | first 1 }}
+
+        <div class="list-item {{ if .checked }}checked{{ end }}">
+          <img
+            src="/svg/checkboxes/{{ if .checked }}checked{{ index $randomChecked 0 }}{{ else }}unchecked{{ index $randomUnchecked 0 }}{{ end }}.svg"
+            class="checkbox"
+            alt="Checkbox"
+          >
+          <span class="padding-after-checkbox"></span>
+          <span class="text-number">
+            {{ printf "%02d" (int .id) }}.
+          </span>
+          <span class="padding-after-number"></span>
+          <a href="{{ .link }}" class="item-text">{{ .text }}</a>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+  <script>
+    // Set your marriage date (YYYY-MM-DD format)
+    const marriageDate = new Date('2002-03-03'); // Replace with your actual marriage date
+
+    // Function to calculate days and years since marriage
+    function calculateDaysAndYearsSinceMarriage() {
+      const today = new Date();
+      const timeDiff = today - marriageDate;
+      const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+      const yearsDiff = Math.floor(daysDiff / 365.25); // Using 365.25 for better accuracy
+      return {
+        days: daysDiff,
+        years: yearsDiff,
+      };
+    }
+
+    // Function to update both counters
+    function updateCounters() {
+      const { days, years } = calculateDaysAndYearsSinceMarriage();
+      document.getElementById('days-counter').textContent = `${days} ${days > 1 ? '天' : '日'}`;
+      document.getElementById('years-counter').textContent = `${years} ${years > 1 ? '年' : '年'}`;
+    }
+
+    // Initial update
+    updateCounters();
+
+    // Optional: Update the counters once a day (every 86400 seconds)
+    setInterval(updateCounters, 86400 * 1000); // 86400 * 1000 = 1 day in milliseconds
+  </script>
+{{ end }}
