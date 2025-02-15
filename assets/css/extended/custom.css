@@ -3,9 +3,20 @@
   font-family: 'DC-CST';
   src: url('/fonts/DC-CST.woff2') format('woff2'),
        url('/fonts/DC-CST.woff') format('woff'),
-       url('/fonts/DC-CST.ttf') format('truetype');
+       /* url('/fonts/DC-CST.ttf') format('truetype');  do not use ttf */
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'awkwardblack';
+  font-weight: 220;
+  font-style: normal;
+  font-display: swap;
+  /* unicode-range: U+000-5FF; Downloads only latin glyphs */
+  src: local('awkwardblack'),
+       url('/fonts/awkwardblack.woff2') format('woff2'),
+       url('/fonts/awkwardblack.woff') format('woff');
 }
 
 /* Ensure html and body cover the full viewport height */
@@ -344,11 +355,13 @@ html body {
 /* Text Content Style (for regular text blocks) */
 .content-text {
   font-size: 1.5rem; /* Match .item-text font size */
-  line-height: 1.5;
-  font-family: 'DC-CST', sans-serif; /* Same font */
+  line-height: 2;
+  font-family: 'awkwardblack', sans-serif; /* Same font */
   color: #2f5061; /* Same color */
   /* No transition -- not typically applied to basic text */
-  margin-bottom: 1rem; /* Add some spacing between blocks */
+  padding-top: 50px; /* Space above the tag line */
+  padding-bottom: 10px; /* Space below the text */
+  margin-bottom: 3rem; /* Add some spacing between blocks */
 }
 
 /* Responsive Adjustments for Text Content */

@@ -36,14 +36,12 @@
 
   <!-- define the 100-reasons-why page style -->
   
-  {{- if .Content }}
-  <div class="post-content"> 
+  {{- if .Content }} 
     <div class="content-text">
        {{- if not (.Param "disableAnchoredHeadings") }}
            {{- partial "anchored_headings.html" .Content -}}
        {{- else }}{{ .Content }}{{ end }}
     </div>
- </div>
   {{- end }}
 
   <footer class="post-footer">
