@@ -18,7 +18,10 @@ params:
       - /css/extended/custom.css
     customJS:
       - /js/custom.js # Add this if you created a custom.js file
-
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # <- Allows raw HTML in Markdown
 disableKinds:
   - taxonomy
   - term
