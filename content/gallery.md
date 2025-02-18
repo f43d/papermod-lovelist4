@@ -4,8 +4,8 @@ type: gallery
 ---
 
 <div id="nanogallery2" data-nanogallery2='{
-    "thumbnailHeight": 300,
-    "thumbnailWidth": 300,
+    "thumbnailHeight": 150,
+    "thumbnailWidth": 200,
     "itemsBaseURL": "https://buc.ketli.st/images/gallery/"
 }'>
     <a href="test-01.jpg" data-ngThumb="test-01_t.jpg">Berlin 1</a>

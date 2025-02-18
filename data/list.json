@@ -235,7 +235,7 @@
   },
   {
     "id": 39,
-    "text": "幫我剃鬚",
+    "text": "在櫻花樹下野餐",
     "checked": false,
     "link": "https://example.com"
   },
@@ -415,7 +415,7 @@
   },
   {
     "id": 69,
-    "text": "幫兩個仔打手印記録成長階段",
+    "text": "幫我剃鬚",
     "checked": false,
     "link": "https://example.com"
   },
@@ -530,6 +530,12 @@
   {
     "id": 88,
     "text": "坐郵輪環游世界",
+    "checked": false,
+    "link": "https://example.com"
+  },
+  {
+    "id": 89,
+    "text": "幫兩個仔打手印記錄成長階段",
     "checked": false,
     "link": "https://example.com"
   },
